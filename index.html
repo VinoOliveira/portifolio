@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Link para a fonte Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- link para o Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <header>
+        <!-- Menu de navegação -->
+        <div id="menu">
+            <ul>
+                <li><a href="#sobre-mim">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portifolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <article>
+        <!-- Seção Sobre Mim -->
+        <div id="sobre-mim">
+            <div class="texto">
+                <h1>Vinicius Henrique</h1>
+                <p>
+                    Estudante de Desenvolvimento de Sistemas com sólidos conhecimentos em Java e SQL. Desenvolvi
+                    projetos acadêmicos significativos para aplicar e expandir essas habilidades. Estou em busca de
+                    oportunidades para aplicar meu conhecimento em ambientes práticos e crescer profissionalmente
+                </p>
+                <!-- Links para GitHub e LinkedIn -->
+                <div class="social-icons">
+                    <a href="https://github.com/VinoOliveira" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/seu-usuario" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <!-- Imagem de perfil -->
+            <img src="img/imagem.jpg" alt="foto perfil">
+        </div>
+        <!-- Seção Formação -->
+        <div id="formacao">
+            <h2>Formação</h2>
+            <ul class="lista-formacao">
+                <li>
+                    <h3>Graduação em Analise e Desenvolvimento de Sistemas</h3>
+                    <p>Uninter, 2024 - 2026</p>
+                </li>
+                <li>
+                    <h3>Curso Técnico em Desenvolvimento de Sistemas</h3>
+                    <p>Senac, 2022 - 2023</p>
+                </li>
+            </ul> <!-- Fechamento do elemento <ul> -->
+        </div>
+        <!-- Seção Portfólio -->
+        <div id="portifolio">
+            <h2>Portfólio</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Finanças Master</h3>
+                    <p>O FinançasMaster é um projeto web fullstack que visa otimizar o gerenciamento de despesas e
+                        receitas.</p>
+                    <h5>Tecnoligias atulizadas:</h5>
+                    <i class="fab fa-java"></i>
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3"></i>
+                    <br>
+                    <!-- Link para o projeto no GitHub -->
+                    <a href="https://github.com/VinoOliveira/FinancasMaster" target="_blank">Ver no GitHub</a>
+                </div>
+            </div>
+        </div>
+        <!-- Seção Contato -->
+        <div id="contato">
+            <h2>Contato</h2>
+            <!-- Formulário de contato -->
+            <form action="mailto:viniciushenrique3344@gmail.com" method="POST" enctype="text/plain">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome..." required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Seu email..." required>
+
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" placeholder="Sua mensagem..." rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </article>
+</body>
+
+</html>
